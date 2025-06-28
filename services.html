@@ -1,0 +1,205 @@
+(services.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services - Digital Health Librarian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.postimg.cc/ZnR4rNLW/medical-services-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.94);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #80263a;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+
+    nav.main-nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    nav.main-nav a button {
+      background-color: #80263a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav.main-nav a button:hover {
+      background-color: #c94c4c;
+      transform: translateY(-2px);
+    }
+
+    nav.lang-switcher {
+      background-color: #fceef1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    nav.lang-switcher button {
+      background-color: #fff5e1;
+      border: 2px solid #80263a;
+      color: #80263a;
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    nav.lang-switcher button:hover {
+      background-color: #f7cac9;
+    }
+
+    section {
+      background-color: #fff5e1;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #80263a;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    footer {
+      background-color: #80263a;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+
+  <header>
+    <h1 id="page-title">Our Services</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="about.html"><button>About</button></a>
+    <a href="contact.html"><button>Contact</button></a>
+    <a href="services.html"><button>Services</button></a>
+    <a href="resources.html"><button>Resources</button></a>
+    <a href="ai-chatbot.html"><button>Ai Chatbot</button></a>
+    <a href="index.html"><button>← Back to Homepage</button></a>
+  </nav>
+
+  <!-- Language Switch -->
+  <nav class="lang-switcher">
+    <strong>Choose Language:</strong>
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ms')">Bahasa Melayu</button>
+  </nav>
+
+  <!-- Service Content -->
+  <section>
+    <h2 id="section-title">What We Offer</h2>
+    <p id="intro-text">As Digital Health Librarians, we offer various services to support your digital health journey:</p>
+    <ul id="service-list">
+      <li><strong>Curated Health Information:</strong> We provide reliable, evidence-based health resources.</li>
+      <li><strong>Research Support:</strong> Helping users locate and understand health-related data & studies.</li>
+      <li><strong>Digital Literacy Training:</strong> Teaching users how to identify trustworthy online health sources.</li>
+      <li><strong>Personalized Health Guidance:</strong> Offering tailored support for your health needs.</li>
+      <li><strong>Tech Support:</strong> Assisting users with mobile health apps and wearables.</li>
+      <li><strong>Community Outreach:</strong> Promoting awareness of digital health tools and access.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Digital Health Librarian Hub. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<!-- Language Switch Script -->
+<script>
+  const translations = {
+    en: {
+      "page-title": "Our Services",
+      "section-title": "What We Offer",
+      "intro-text": "As Digital Health Librarians, we offer various services to support your digital health journey:",
+      "service-list": [
+        "<strong>Curated Health Information:</strong> We provide reliable, evidence-based health resources.",
+        "<strong>Research Support:</strong> Helping users locate and understand health-related data & studies.",
+        "<strong>Digital Literacy Training:</strong> Teaching users how to identify trustworthy online health sources.",
+        "<strong>Personalized Health Guidance:</strong> Offering tailored support for your health needs.",
+        "<strong>Tech Support:</strong> Assisting users with mobile health apps and wearables.",
+        "<strong>Community Outreach:</strong> Promoting awareness of digital health tools and access."
+      ]
+    },
+    ms: {
+      "page-title": "Perkhidmatan Kami",
+      "section-title": "Apa yang Kami Tawarkan",
+      "intro-text": "Sebagai Pustakawan Kesihatan Digital, kami menawarkan pelbagai perkhidmatan untuk menyokong perjalanan kesihatan digital anda:",
+      "service-list": [
+        "<strong>Maklumat Kesihatan Terkini:</strong> Kami menyediakan sumber kesihatan yang boleh dipercayai dan berasaskan bukti.",
+        "<strong>Sokongan Penyelidikan:</strong> Membantu pengguna mencari dan memahami data serta kajian berkaitan kesihatan.",
+        "<strong>Latihan Literasi Digital:</strong> Mengajar pengguna cara mengenal pasti sumber kesihatan dalam talian yang sah.",
+        "<strong>Bimbingan Kesihatan Peribadi:</strong> Menawarkan sokongan khusus mengikut keperluan kesihatan anda.",
+        "<strong>Sokongan Teknologi:</strong> Membantu pengguna menggunakan aplikasi mudah alih kesihatan dan peranti boleh pakai.",
+        "<strong>Libat Urus Komuniti:</strong> Mempromosikan kesedaran tentang alat kesihatan digital dan akses kepada maklumat."
+      ]
+    }
+  };
+
+  function switchLanguage(lang) {
+    const content = translations[lang];
+    document.getElementById("page-title").textContent = content["page-title"];
+    document.getElementById("section-title").textContent = content["section-title"];
+    document.getElementById("intro-text").textContent = content["intro-text"];
+
+    const ul = document.getElementById("service-list");
+    ul.innerHTML = ""; // Clear current items
+    content["service-list"].forEach(item => {
+      const li = document.createElement("li");
+      li.innerHTML = item;
+      ul.appendChild(li);
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health Resources - Digital Health Librarian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.postimg.cc/zB45swnc/healthcare-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.94);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #80263a;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+
+    nav.main-nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    nav.main-nav a button {
+      background-color: #80263a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav.main-nav a button:hover {
+      background-color: #c94c4c;
+      transform: translateY(-2px);
+    }
+
+    nav.lang-switcher {
+      background-color: #fceef1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    nav.lang-switcher button {
+      background-color: #fff5e1;
+      border: 2px solid #80263a;
+      color: #80263a;
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    nav.lang-switcher button:hover {
+      background-color: #f7cac9;
+    }
+
+    section {
+      background-color: #fff5e1;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #80263a;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    a.resource-link {
+      color: #80263a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.resource-link:hover {
+      color: #a12c2c;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #80263a;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+
+  <header>
+    <h1 id="page-title">Health Resources</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="about.html"><button>About</button></a>
+    <a href="contact.html"><button>Contact</button></a>
+    <a href="services.html"><button>Services</button></a>
+    <a href="resources.html"><button>Resources</button></a>
+    <a href="ai-chatbot.html"><button>Ai Chatbot</button></a>
+    <a href="index.html"><button>← Back to Homepage</button></a>
+  </nav>
+
+  <!-- Language Switch -->
+  <nav class="lang-switcher">
+    <strong>Choose Language:</strong>
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ms')">Bahasa Melayu</button>
+  </nav>
+
+  <!-- Content Section -->
+  <section>
+    <h2 id="section-title">Trusted Health Information Sources</h2>
+    <p id="intro-text">Here are some reliable health resources to help you stay informed:</p>
+    <ul id="resource-list">
+      <li><a href="https://www.who.int" target="_blank" class="resource-link">World Health Organization (WHO)</a> – Global health updates and guidelines.</li>
+      <li><a href="https://www.cdc.gov" target="_blank" class="resource-link">Centers for Disease Control and Prevention (CDC)</a> – U.S. health protection agency.</li>
+      <li><a href="https://www.nhs.uk" target="_blank" class="resource-link">National Health Service (NHS)</a> – UK-based medical advice and tools.</li>
+      <li><a href="https://medlineplus.gov" target="_blank" class="resource-link">MedlinePlus</a> – Information from the U.S. National Library of Medicine.</li>
+      <li><a href="https://www.healthline.com" target="_blank" class="resource-link">Healthline</a> – Tips and facts about wellness and diseases.</li>
+      <li><a href="https://www.mayoclinic.org" target="_blank" class="resource-link">Mayo Clinic</a> – Expert patient care and medical research.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Digital Health Librarian Hub. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<!-- Language Script -->
+<script>
+  const translations = {
+    en: {
+      "page-title": "Health Resources",
+      "section-title": "Trusted Health Information Sources",
+      "intro-text": "Here are some reliable health resources to help you stay informed:",
+      "resources": [
+        { name: "World Health Organization (WHO)", url: "https://www.who.int", desc: "– Global health updates and guidelines." },
+        { name: "Centers for Disease Control and Prevention (CDC)", url: "https://www.cdc.gov", desc: "– U.S. health protection agency." },
+        { name: "National Health Service (NHS)", url: "https://www.nhs.uk", desc: "– UK-based medical advice and tools." },
+        { name: "MedlinePlus", url: "https://medlineplus.gov", desc: "– Information from the U.S. National Library of Medicine." },
+        { name: "Healthline", url: "https://www.healthline.com", desc: "– Tips and facts about wellness and diseases." },
+        { name: "Mayo Clinic", url: "https://www.mayoclinic.org", desc: "– Expert patient care and medical research." }
+      ]
+    },
+    ms: {
+      "page-title": "Sumber Kesihatan",
+      "section-title": "Sumber Maklumat Kesihatan Dipercayai",
+      "intro-text": "Berikut adalah sumber maklumat kesihatan yang boleh dipercayai untuk kekal dimaklumkan:",
+      "resources": [
+        { name: "Pertubuhan Kesihatan Sedunia (WHO)", url: "https://www.who.int", desc: "– Kemas kini dan panduan kesihatan global." },
+        { name: "Pusat Kawalan dan Pencegahan Penyakit (CDC)", url: "https://www.cdc.gov", desc: "– Agensi perlindungan kesihatan Amerika Syarikat." },
+        { name: "Perkhidmatan Kesihatan Kebangsaan (NHS)", url: "https://www.nhs.uk", desc: "– Nasihat dan alat kesihatan dari UK." },
+        { name: "MedlinePlus", url: "https://medlineplus.gov", desc: "– Maklumat dari Perpustakaan Perubatan Nasional AS." },
+        { name: "Healthline", url: "https://www.healthline.com", desc: "– Petua dan fakta kesihatan serta penyakit." },
+        { name: "Mayo Clinic", url: "https://www.mayoclinic.org", desc: "– Penjagaan pesakit dan penyelidikan perubatan pakar." }
+      ]
+    }
+  };
+
+  function switchLanguage(lang) {
+    const t = translations[lang];
+    document.getElementById("page-title").textContent = t["page-title"];
+    document.getElementById("section-title").textContent = t["section-title"];
+    document.getElementById("intro-text").textContent = t["intro-text"];
+
+    const ul = document.getElementById("resource-list");
+    ul.innerHTML = "";
+    t.resources.forEach(r => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${r.url}" target="_blank" class="resource-link">${r.name}</a> ${r.desc}`;
+      ul.appendChild(li);
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart HealthCare Information Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.postimg.cc/T1Z1pG2r/healthcare-tech.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #80263a;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 80px;
+      border-radius: 10px;
+    }
+
+    nav.main-nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav.main-nav a button {
+      background-color: #80263a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav.main-nav a button:hover {
+      background-color: #c94c4c;
+      transform: translateY(-3px);
+    }
+
+    nav.lang-switcher {
+      background-color: #fceef1;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    nav.lang-switcher button {
+      background-color: #fff5e1;
+      border: 2px solid #80263a;
+      color: #80263a;
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    nav.lang-switcher button:hover {
+      background-color: #f7cac9;
+    }
+
+    section {
+      background: #fff5e1;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    section h2 {
+      color: #80263a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+  <header>
+    <img src="https://i.postimg.cc/8cNN3gsz/Smart-Health-Care-20250520-015018-0000.png" alt="Smart Healthcare Logo" />
+    <div>
+      <h1 id="main-title">Welcome to My Website!</h1>
+      <p id="sub-title">Digital Librarian Smart Healthcare</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="index.html"><button>Home</button></a>
+    <a href="about.html"><button>About</button></a>
+    <a href="contact.html"><button>Contact</button></a>
+    <a href="services.html"><button>Services</button></a>
+    <a href="resources.html"><button>Resources</button></a>
+    <a href="ai-chatbot"><button>AI Chatbot</button></a>
+  </nav>
+
+  <!-- Language Switcher -->
+  <nav class="lang-switcher">
+    <span style="font-weight:bold;">Choose Language:</span>
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ms')">Bahasa Melayu</button>
+  </nav>
+
+  <!-- Introduction Section -->
+  <section>
+    <h2 id="intro-title">Introduction</h2>
+    <p id="intro-p1">Smart HealthCare Information Hub is a futuristic online platform that provides comprehensive, easily accessible, and intelligent healthcare information and services.</p>
+    <p id="intro-p2">Designed to meet the needs of future communities, the Smart HealthCare Information Hub acts as a trusted digital space where users can learn about their health, connect with certified healthcare consultants, manage medical records, and receive personalized support anytime and anywhere.</p>
+    <p id="intro-p3">Whether you want to understand symptoms, schedule virtual consultations, or track your health goals, Smart HealthCare Hub is your smart health companion for a better future.</p>
+    <p id="intro-p4">We believe that trusted and understandable healthcare information is the foundation of a healthy lifestyle. With the support of AI technology, we deliver personalized content tailored to your needs. This portal not only informs but empowers you to make smart health decisions.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart HealthCare Information Hub. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- Language Switcher Script -->
+<script>
+  const translations = {
+    en: {
+      "main-title": "Welcome to My Website!",
+      "sub-title": "Digital Librarian Smart Healthcare",
+      "intro-title": "Introduction",
+      "intro-p1": "Smart HealthCare Information Hub is a futuristic online platform that provides comprehensive, easily accessible, and intelligent healthcare information and services.",
+      "intro-p2": "Designed to meet the needs of future communities, the Smart HealthCare Information Hub acts as a trusted digital space where users can learn about their health, connect with certified healthcare consultants, manage medical records, and receive personalized support anytime and anywhere.",
+      "intro-p3": "Whether you want to understand symptoms, schedule virtual consultations, or track your health goals, Smart HealthCare Hub is your smart health companion for a better future.",
+      "intro-p4": "We believe that trusted and understandable healthcare information is the foundation of a healthy lifestyle. With the support of AI technology, we deliver personalized content tailored to your needs. This portal not only informs but empowers you to make smart health decisions."
+    },
+    ms: {
+      "main-title": "Selamat Datang ke Laman Web Saya!",
+      "sub-title": "Pustakawan Digital Smart Healthcare",
+      "intro-title": "Pengenalan",
+      "intro-p1": "Smart HealthCare Information Hub ialah platform dalam talian futuristik yang menyediakan maklumat dan perkhidmatan kesihatan yang menyeluruh, mudah diakses, dan pintar.",
+      "intro-p2": "Direka untuk memenuhi keperluan komuniti masa depan, Smart HealthCare Information Hub bertindak sebagai ruang digital dipercayai di mana pengguna boleh belajar tentang kesihatan, berhubung dengan perunding bertauliah, mengurus rekod perubatan dan mendapat sokongan peribadi pada bila-bila masa dan di mana-mana.",
+      "intro-p3": "Sama ada anda ingin memahami simptom, menjadualkan konsultasi maya, atau menjejak matlamat kesihatan anda, Smart HealthCare Hub ialah teman kesihatan pintar anda untuk masa depan yang lebih baik.",
+      "intro-p4": "Kami percaya bahawa maklumat kesihatan yang mudah difahami dan dipercayai adalah asas kepada gaya hidup sihat. Dengan sokongan teknologi AI, kami menyampaikan informasi yang diperibadikan mengikut keperluan pengguna. Portal ini bukan sahaja mendidik, tetapi juga memperkasakan anda untuk membuat keputusan kesihatan yang bijak."
+    }
+  };
+
+  function switchLanguage(lang) {
+    const content = translations[lang];
+    for (let id in content) {
+      document.getElementById(id).innerText = content[id];
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Digital Health Librarian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.postimg.cc/T1Z1pG2r/healthcare-tech.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #80263a;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+
+    nav.main-nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    nav.main-nav a button {
+      background-color: #80263a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav.main-nav a button:hover {
+      background-color: #c94c4c;
+      transform: translateY(-2px);
+    }
+
+    nav.lang-switcher {
+      background-color: #fceef1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    nav.lang-switcher button {
+      background-color: #fff5e1;
+      border: 2px solid #80263a;
+      color: #80263a;
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    nav.lang-switcher button:hover {
+      background-color: #f7cac9;
+    }
+
+    section {
+      background-color: #fff5e1;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #80263a;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #80263a;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+
+  <header>
+    <h1 id="main-title">About the Digital Health Librarian Team</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="about.html"><button>About</button></a>
+    <a href="contact.html"><button>Contact</button></a>
+    <a href="services.html"><button>Services</button></a>
+    <a href="resources.html"><button>Resources</button></a>
+    <a href="ai-chatbot.html"><button>Ai Chatbot</button></a>
+    <a href="index.html"><button>← Back to Homepage</button></a>
+  </nav>
+
+  <!-- Language Switcher -->
+  <nav class="lang-switcher">
+    <span><strong>Choose Language:</strong></span>
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ms')">Bahasa Melayu</button>
+  </nav>
+
+  <section>
+    <h2 id="about-title">Who We Are</h2>
+    <p id="about-p1">We are a team of passionate digital health information specialists, committed to providing reliable, up-to-date, and user-friendly health resources for everyone. As Digital Health Librarians, we bridge the gap between technology, health knowledge, and people.</p>
+
+    <h2 id="mission-title">Our Mission</h2>
+    <p id="mission-p">To empower individuals with trusted digital health information, support informed decision-making, and foster a healthier, smarter community through digital literacy.</p>
+
+    <h2 id="vision-title">Our Vision</h2>
+    <p id="vision-p">To be the leading hub for digital health knowledge and virtual support, accessible to all, anytime and anywhere.</p>
+
+    <h2 id="services-title">What We Do</h2>
+    <ul id="services-list">
+      <li>Curate reliable health content and educational materials</li>
+      <li>Provide virtual guidance and consultations for health-related inquiries</li>
+      <li>Assist users in navigating digital health tools and platforms</li>
+      <li>Offer training in digital literacy and health resource evaluation</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Digital Health Librarian Hub. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- Language Switcher Script -->
+<script>
+  const translations = {
+    en: {
+      "main-title": "About the Digital Health Librarian Team",
+      "about-title": "Who We Are",
+      "about-p1": "We are a team of passionate digital health information specialists, committed to providing reliable, up-to-date, and user-friendly health resources for everyone. As Digital Health Librarians, we bridge the gap between technology, health knowledge, and people.",
+      "mission-title": "Our Mission",
+      "mission-p": "To empower individuals with trusted digital health information, support informed decision-making, and foster a healthier, smarter community through digital literacy.",
+      "vision-title": "Our Vision",
+      "vision-p": "To be the leading hub for digital health knowledge and virtual support, accessible to all, anytime and anywhere.",
+      "services-title": "What We Do",
+      "services-list": `<li>Curate reliable health content and educational materials</li>
+                        <li>Provide virtual guidance and consultations for health-related inquiries</li>
+                        <li>Assist users in navigating digital health tools and platforms</li>
+                        <li>Offer training in digital literacy and health resource evaluation</li>`
+    },
+    ms: {
+      "main-title": "Tentang Pasukan Pustakawan Kesihatan Digital",
+      "about-title": "Siapa Kami",
+      "about-p1": "Kami adalah pasukan pakar maklumat kesihatan digital yang berdedikasi, komited untuk menyediakan sumber kesihatan yang boleh dipercayai, terkini dan mesra pengguna untuk semua. Sebagai Pustakawan Kesihatan Digital, kami menjadi jambatan antara teknologi, ilmu kesihatan dan masyarakat.",
+      "mission-title": "Misi Kami",
+      "mission-p": "Memberi kuasa kepada individu dengan maklumat kesihatan digital yang dipercayai, menyokong keputusan yang bijak, dan membentuk komuniti yang lebih sihat dan celik digital.",
+      "vision-title": "Visi Kami",
+      "vision-p": "Menjadi hab utama untuk pengetahuan kesihatan digital dan sokongan maya yang boleh diakses oleh semua pada bila-bila masa dan di mana sahaja.",
+      "services-title": "Apa Yang Kami Lakukan",
+      "services-list": `<li>Mengumpul kandungan kesihatan yang boleh dipercayai dan bahan pendidikan</li>
+                        <li>Menyediakan panduan maya dan konsultasi untuk pertanyaan berkaitan kesihatan</li>
+                        <li>Membantu pengguna mengakses dan memahami alat kesihatan digital</li>
+                        <li>Menawarkan latihan dalam literasi digital dan penilaian sumber kesihatan</li>`
+    }
+  };
+
+  function switchLanguage(lang) {
+    const content = translations[lang];
+    for (let key in content) {
+      const el = document.getElementById(key);
+      if (el) {
+        if (key === "services-list") {
+          el.innerHTML = content[key];
+        } else {
+          el.innerText = content[key];
+        }
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
